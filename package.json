@@ -1,0 +1,14 @@
+{
+  "name": "csgoclient",
+  "version": "1.0.0",
+  "description": "A CSGO Client used for improving in the game",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Axel Ramone",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^1.7.9"
+  }
+}
