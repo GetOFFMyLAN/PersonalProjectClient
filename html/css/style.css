@@ -1,3 +1,10 @@
-.test {
-  background-color: blue;
+@import url('https://fonts.googleapis.com/css?family=Hind+Siliguri|PT+Sans'); /* Google fonts import */
+
+/* For future reference */
+/* font-family: 'Hind Siliguri', sans-serif; */
+/* font-family: 'PT Sans', sans-serif; */
+/* font-family: 'Montserrat', sans-serif; */
+
+body {
+  background-color: #232323;
 }
