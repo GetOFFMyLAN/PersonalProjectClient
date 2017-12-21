@@ -7,4 +7,17 @@
 
 body {
   background-color: #232323;
+  margin: 0px;
+}
+
+.draggable {
+  background-color: #443266;
+  height: 25px;
+  width: 1000px;
+  -webkit-app-region: drag;
+  -webkit-user-select: none;
+}
+
+.toolbar {
+
 }
