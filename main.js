@@ -8,7 +8,7 @@ let win;
 
 // Create window function
 function createWindow() {
-  win = new BrowserWindow({width: 1000, heigth: 700, resizable: false, icon: './html/img/logo.png'})
+  win = new BrowserWindow({width: 1000, heigth: 900, resizable: false, icon: './html/img/logo.png'}) //TODO: add framless window after finalizing the product
 
   win.loadURL(url.format({
     pathname: path.join(__dirname,'/html/index.html'),
