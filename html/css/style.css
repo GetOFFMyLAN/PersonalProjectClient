@@ -31,3 +31,9 @@ body {
   background-color: #443266;
   border-color: #443266;
 }
+
+.messaging-back {
+  background-color: #3a3a3a;
+  width: 300px;
+  height: 515px;
+}
