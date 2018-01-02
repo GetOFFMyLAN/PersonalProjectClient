@@ -8,8 +8,12 @@ let win;
 
 // Create window function
 function createWindow() {
-  win = new BrowserWindow({width: 1000, heigth: 1100, resizable: false, icon: './html/img/logo.png'}) //TODO: add framless window after finalizing the product
+  win = new BrowserWindow({width: 1000, heigth: 1100, resizable: false, icon: './html/img/logo.png', maximizable: false}) //TODO: add framless window after finalizing the product
 
+  // Remove menu
+  //win.setMenu(null);
+
+  // Load index.html
   win.loadURL(url.format({
     pathname: path.join(__dirname,'/html/index.html'),
     protocol: 'file',
