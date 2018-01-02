@@ -18,6 +18,16 @@ body {
   -webkit-user-select: none;
 }
 
-.toolbar {
+.toolbar { /*TODO: add toolbar css */
 
+}
+
+.search {
+  border-color: #443266;
+  color: #443266;
+}
+
+.search:hover {
+  background-color: #443266;
+  border-color: #443266;
 }
