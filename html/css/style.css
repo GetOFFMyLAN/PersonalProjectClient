@@ -39,7 +39,7 @@ body {
 }
 
 .messaging-back {
-  background-color: #3a3a3a;
+  background-color: #000; /*TODO: change color scheme but keep dark theme */
   width: 300px;
   height: 515px;
   overflow-y: auto;
