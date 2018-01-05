@@ -18,6 +18,20 @@ body {
   margin: 0px;
 }
 
+/* Splash screen css */
+.splash-body {
+  background-color: #232323;
+  margin: 0px;
+}
+
+.splash-anim {
+  width: 500px;
+  height: 550px;
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+
 .draggable {
   background-color: #443266;
   height: 25px;
@@ -59,6 +73,10 @@ body {
 }
 
 /* Navbar styling */
+.navbar {
+  color: #111111;
+  background-color: #111111;
+}
 
 .navbar-brand {
   font-family: 'PT Sans', sans-serif;
@@ -90,52 +108,73 @@ body {
 /* Messaging styling */
 
 .messaging-back {
-  background-color: #111111; /*TODO: change color scheme but keep dark theme */
+  background-color: #111111;
   width: 250px;
   height: 515px;
   overflow-y: auto;
   direction: ltr;
   overflow: hidden;
+  border-top: 1px solid #262626;
 }
 
 .messaging-back:hover {
   overflow: auto;
 }
 
-.new-mess {
-  width: 50px;
-  height: 50px;
+.new-mess-btn {
   border-radius: 50%;
-  border: 2px dashed #444444;
-  text-align: center;
+  width: 65px;
+  height: 65px;
+  border: 2px dashed #262626;
   margin-left: 20px;
-  margin-top: 25px;
+  margin-top: 20px;
+  position: relative;
 }
 
-.new-mess-btn:link {
+.message-btn-plus {
+    text-align: center;
+    margin: 5px;
+}
+
+.mess-btn-text:link {
     text-decoration: none;
     font-size: 11px;
     font-family: 'Montserrat', sans-serif;
     color: #595959;
 }
 
-.new-mess-btn:visited {
+.mess-btn-text {
+  float: right;
+  text-align: right;
+}
+
+.mess-btn-text:visited {
   text-decoration: none;
   font-size: 11px;
   font-family: 'Montserrat', sans-serif;
   color: #595959;
 }
 
-.new-mess-btn:hover {
+.mess-btn-text:hover {
   color: #7f7f7f;
   text-decoration: none;
   font-size: 11px;
   font-family: 'Montserrat', sans-serif;
 }
 
-.new-mess-btn:active {
+.mess-btn-text:active {
   text-decoration: none;
   font-size: 11px;
   font-family: 'Montserrat', sans-serif;
   color: #595959;
+}
+
+.div-link-span {
+  position: absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+
+  z-index: 1;
 }
