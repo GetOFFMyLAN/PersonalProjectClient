@@ -8,20 +8,27 @@ let win;
 
 // Create window function
 function createWindow() {
-  win = new BrowserWindow({width: 1000, heigth: 1100, resizable: false, icon: './html/img/logo2.png', maximizable: false}) //TODO: add framless window after finalizing the product
-
+  win = new BrowserWindow({width: 1000, heigth: 1100, resizable: false, icon: './html/img/logo2.png', maximizable: false, backgroundColor: '#232323'})
   // Remove menu
   //win.setMenu(null);
 
   // Load index.html
   win.loadURL(url.format({
-    pathname: path.join(__dirname,'/html/index.html'),
+    pathname: path.join(__dirname,'./html/splash.html'),
     protocol: 'file',
     slashes: true
   }));
 
+  setTimeout(function() {
+  win.loadURL(url.format({
+      pathname: path.join(__dirname,'./html/index.html'),
+      protocol: 'file',
+      slashes: true
+  }));
+}, 5000);
+
   // Open devtools
-  win.webContents.openDevTools();
+  // win.webContents.openDevTools();
 
   // Close window
   win.on('closed', () => {
@@ -29,4 +36,4 @@ function createWindow() {
   });
 }
 
-app.on('ready', createWindow); // Checks if electron is ready to create window, then does so
+app.on('ready', createWindow);
