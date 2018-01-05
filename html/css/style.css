@@ -95,6 +95,11 @@ body {
   height: 515px;
   overflow-y: auto;
   direction: ltr;
+  overflow: hidden;
+}
+
+.messaging-back:hover {
+  overflow: auto;
 }
 
 .new-mess {
@@ -107,12 +112,28 @@ body {
   margin-top: 25px;
 }
 
-a:hover, .new-mess-btn {
-  color: #7f7f7f;
-  text-decoration: none;
+.new-mess-btn:link {
+    text-decoration: none;
+    font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
+    color: #595959;
 }
 
-a:active, .new-mess-btn {
+.new-mess-btn:visited {
+  text-decoration: none;
+  font-size: 11px;
+  font-family: 'Montserrat', sans-serif;
+  color: #595959;
+}
+
+.new-mess-btn:hover {
+  color: #7f7f7f;
+  text-decoration: none;
+  font-size: 11px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.new-mess-btn:active {
   text-decoration: none;
   font-size: 11px;
   font-family: 'Montserrat', sans-serif;
