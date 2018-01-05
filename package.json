@@ -1,5 +1,5 @@
 {
-  "name": "csgoclient",
+  "name": "lightningclient",
   "version": "1.0.0",
   "description": "A CSGO Client used for improving in the game",
   "main": "main.js",
