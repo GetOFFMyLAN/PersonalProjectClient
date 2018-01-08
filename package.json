@@ -9,6 +9,7 @@
   "author": "Axel Ramone",
   "license": "ISC",
   "dependencies": {
-    "electron": "^1.7.9"
+    "electron": "^1.7.10",
+    "jquery": "^3.2.1"
   }
 }
