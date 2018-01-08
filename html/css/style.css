@@ -114,6 +114,7 @@ body {
   overflow-y: auto;
   direction: ltr;
   overflow: hidden;
+  float: left;
   /* border-top: 1px solid #262626; */ /* TODO: determine if this border is necessary */
 }
 
@@ -136,7 +137,7 @@ body {
     margin: 5px;
 }
 
-.mess-btn-text:link {
+/* .mess-btn-text:link {
     text-decoration: none;
     font-size: 11px;
     font-family: 'Montserrat', sans-serif;
@@ -155,6 +156,8 @@ body {
   color: #595959;
 }
 
+*/
+
 .mess-btn-text:hover {
   color: #7f7f7f;
   text-decoration: none;
@@ -162,12 +165,14 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.mess-btn-text:active {
+/* .mess-btn-text:active {
   text-decoration: none;
   font-size: 11px;
   font-family: 'Montserrat', sans-serif;
   color: #595959;
 }
+
+*/
 
 .div-link-span {
   position: absolute;
@@ -177,4 +182,27 @@ body {
   left: 0;
 
   z-index: 1;
+}
+
+.div-link-span:hover {
+  color: #7f7f7f;
+  text-decoration: none;
+}
+
+/* Main dashboard styling */
+
+.dashboard-main {
+  float: left;
+}
+
+.dash-title {
+  color: #fff;
+  font-weight: lighter;
+  font-size: 18px;
+  text-align: center;
+}
+
+.itm-pract {
+  margin: 10px;
+  text-align: center;
 }
