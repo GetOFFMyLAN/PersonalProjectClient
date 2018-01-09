@@ -16,6 +16,13 @@ html, body {
 body {
   background-color: #232323;
   margin: 0px;
+  -webkit-app-region: no-drag
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /* Splash screen css */
@@ -132,9 +139,20 @@ body {
   position: relative;
 }
 
+.mess-btn-text:hover {
+  background-color: #7f7f7f;
+  text-decoration: none;
+  font-size: 11px;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .message-btn-plus {
     text-align: center;
     margin: 5px;
+}
+
+.message-btn-plus:hover {
+  background-color: #7f7f7f
 }
 
 /* .mess-btn-text:link {
@@ -157,13 +175,6 @@ body {
 }
 
 */
-
-.mess-btn-text:hover {
-  color: #7f7f7f;
-  text-decoration: none;
-  font-size: 11px;
-  font-family: 'Montserrat', sans-serif;
-}
 
 /* .mess-btn-text:active {
   text-decoration: none;
@@ -205,4 +216,13 @@ body {
 .itm-pract {
   margin: 10px;
   text-align: center;
+  border-left: 2px solid #4b4c4c;
+  border-bottom: 2px solid #4b4c4c;
+  overflow: hidden;
+  height: 230px;
+  width: 205px;
+}
+
+.itm-pract:hover {
+  overflow: auto;
 }
