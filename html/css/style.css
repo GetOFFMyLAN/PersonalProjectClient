@@ -25,6 +25,14 @@ body {
   user-select: none;
 }
 
+.dashboard-main {
+  overflow: hidden;
+}
+
+.dashboard-main:hover {
+  overflow: auto;
+}
+
 /* Splash screen css */
 .splash-body {
   background-color: #232323;
