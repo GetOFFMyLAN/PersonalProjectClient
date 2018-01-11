@@ -225,12 +225,19 @@ body {
   margin: 10px;
   text-align: center;
   border-left: 2px solid #4b4c4c;
-  border-bottom: 2px solid #4b4c4c;
   overflow: hidden;
   height: 230px;
   width: 205px;
+  padding-left: 40px;
 }
 
 .itm-pract:hover {
   overflow: auto;
+}
+
+.hrs-played {
+  float: left;
+  margin: 10px;
+  text-align: center;
+  overflow: hidden;
 }
