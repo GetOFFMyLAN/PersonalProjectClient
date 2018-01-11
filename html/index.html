@@ -49,27 +49,19 @@
     <div class="dashboard-main">
       <div class="hrs-played" id="hrs-played">
         <h3 class="dash-title">Time Practiced</h3>
-        <canvas id="myChart" width="400" height="400"></canvas>
-        <script>
-          var myLineChart = new Chart(ctx, {
-              type: 'line',
-              data: [{
-                  x: 10,
-                  y: 20
-                }, {
-                  x: 15,
-                  y: 10
-                }],
-              options: options
-            });
-        </script>
+        <canvas id="hoursChart" width="600" height="230"></canvas>
       </div>
       <div class="itm-pract" id="itm-pract">
-        <h3 class="dash-title">Things To Practice</h3>
-          <li class="list-group-item list-group-item-success">Spray Control</li>
-          <li class="list-group-item list-group-item-success">Crosshair Placement</li>
-          <li class="list-group-item list-group-item-success">Positioning</li>
-          <li class="list-group-item list-group-item-action list-group-item-dark">Add New Item</li>
+        <h3 class="dash-title">Items Practiced</h3>
+          <li class="list-group-item list-group-item-dark">Spray Control</li>
+          <li class="list-group-item list-group-item-dark">Crosshair Placement</li>
+          <li class="list-group-item list-group-item-dark">Positioning</li>
+          <li class="list-group-item list-group-item-dark">Positioning</li>
+          <li class="list-group-item list-group-item-dark">Positioning</li>
+          <li class="list-group-item list-group-item-dark">Positioning</li>
+          <li class="list-group-item list-group-item-dark">Positioning</li>
+          <li class="list-group-item list-group-item-dark">Positioning</li>
+          <li class="list-group-item list-group-item-dark">Positioning</li>
       </div>
     <div class="stats-ot" id="stats-ot">
     </div>
@@ -83,6 +75,6 @@
 
     <!-- Script references -->
     <script src="./js/mentor.js"></script>
-    <script src="../node_modules/chart.js/dist/Chart.js"></script>
+    <script src="../graphs.js"></script>
   </body>
 </html>
