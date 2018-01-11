@@ -226,13 +226,22 @@ body {
   text-align: center;
   border-left: 2px solid #4b4c4c;
   overflow: hidden;
-  height: 230px;
   width: 205px;
   padding-left: 40px;
 }
 
-.itm-pract:hover {
-  overflow: auto;
+.itm-pract > DIV {
+  overflow-y: auto;
+  visibility: hidden;
+  height: 230px;
+}
+
+.itm-pract > DIV > DIV {
+  visibility: visible;
+}
+
+.itm-pract:hover > DIV {
+  visibility: visible;
 }
 
 .hrs-played {
