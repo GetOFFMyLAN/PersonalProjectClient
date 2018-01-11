@@ -5,6 +5,13 @@
 /* font-family: 'PT Sans', sans-serif; */
 /* font-family: 'Montserrat', sans-serif; */
 
+/* Animations */
+
+@keyframes fadeup {
+  from {opacity: 0; top: 100px;}
+  to {opacity: 1; top: 66px;}
+}
+
 /* Body styling */
 
 html, body {
@@ -221,6 +228,8 @@ body {
   text-align: center;
 }
 
+/* Dashboard list styling */
+
 .itm-pract {
   margin: 10px;
   text-align: center;
@@ -244,9 +253,53 @@ body {
   visibility: visible;
 }
 
+/* Hours played graph styling */
+
 .hrs-played {
   float: left;
   margin: 10px;
   text-align: center;
   overflow: hidden;
+}
+
+/* End dashboard Styling */
+
+/* Tutorial page styling */
+.tutorial-main {
+  float: left;
+}
+
+.outer { /* Used to vertically align search div */
+    display: table;
+    position: absolute;
+    width: 100%;
+    margin-top: 30px;
+    animation-name: fadeup;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+.middle { /* Used to vertically align search div */
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner { /* Used to vertically align search div */
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px; /*whatever width you want*/
+}
+
+.tutSearchBox {
+  border: 3px solid #1d9aba;
+  width: 400px;
+  height: 50px;
+  padding-left: 15px;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 50px;
+}
+
+input {
+  outline: none;
 }
