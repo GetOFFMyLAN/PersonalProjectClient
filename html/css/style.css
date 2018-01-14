@@ -269,6 +269,17 @@ body {
   overflow: hidden;
 }
 
+.stats-ot {
+  float: left;
+  text-align: center;
+  border-top: 2px solid #4b4c4c;
+  margin-left: 100px;
+}
+
+.stats-ot > H3 {
+  margin-top: 10px;
+}
+
 /* End dashboard Styling */
 
 /* Tutorial page styling */
