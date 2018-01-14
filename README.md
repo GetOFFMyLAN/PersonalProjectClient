@@ -11,17 +11,12 @@ To get start the client, you will first need [node](https://nodejs.org/) version
 npm install electron
 ```
 
-2. Install jQuery
-```
-npm install jquery
-```
-
-3. Install chart.js
+2. Install chart.js
 ```
 npm install chart.js --save
 ```
 
-4. Run the start script 'npm start' from the command prompt
+3. Run the start script 'npm start' from the command prompt
 ```
 npm start
 ```
