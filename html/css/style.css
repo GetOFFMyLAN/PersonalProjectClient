@@ -310,3 +310,16 @@ body {
 input {
   outline: none;
 }
+
+.searchButton {
+  margin-left: 7px;
+  width: 100px;
+  height: 40px;
+  background-color: #1d9aba;
+  border: none;
+  top: 0px;
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+  color: #fff;
+  border-radius: 8px;
+}
