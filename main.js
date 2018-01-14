@@ -8,7 +8,7 @@ let win;
 
 // Create window function
 function createWindow() {
-  win = new BrowserWindow({width: 1000, heigth: 1100, resizable: false, icon: './html/img/logo2.png', maximizable: false, backgroundColor: '#232323'})
+  win = new BrowserWindow({width: 1000, heigth: 1100, resizable: false, icon: './html/img/logo3.png', maximizable: false, backgroundColor: '#232323'})
   // Remove menu
   //win.setMenu(null);
 
