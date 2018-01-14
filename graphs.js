@@ -24,3 +24,10 @@ var hoursChart = new Chart(ctx, {
       ]
     }
 });
+
+var statChartId = document.getElementById("igStatsChart").getContext('2d');
+var statChart = new Chart(statChartId, {
+  type: 'bar',
+  data: {
+  }
+})
