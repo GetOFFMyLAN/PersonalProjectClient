@@ -249,7 +249,7 @@ body {
 .itm-pract > DIV {
   overflow-y: auto;
   visibility: hidden;
-  height: 230px;
+  height: 200px;
 }
 
 .itm-pract > DIV > DIV {
