@@ -27,7 +27,71 @@ var hoursChart = new Chart(ctx, {
 
 var statChartId = document.getElementById("igStatsChart").getContext('2d');
 var statChart = new Chart(statChartId, {
-  type: 'bar',
+  type: 'line',
   data: {
+    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    datasets: [
+      {
+        label: "Kill/Death Ratio",
+        fill: false,
+        lineTension: 0.3,
+        pointBorderColor: "rgb(255, 255, 255)",
+        pointBackgroundColor: "#fff",
+        pointBorderWidth: 2,
+        pointHoverRadius: 5,
+        pointHoverBackgroundColor: "rgb(255, 255, 255)",
+        pointHoverBorderColor: "rgb(255, 255, 255)",
+        pointHoverBorderWidth: 2,
+        pointRadius: 1,
+        pointHitRadius: 10,
+        borderColor: "rgb(132, 9, 112)",
+        data: [3.4, 1.2, 2.5, 1.7, 2.2, 0.8, 1.1, 0.7, 3.1, 2.7, 1, 1.9]
+      }, {
+        label: "ADR",
+        fill: false,
+        lineTension: 0.3,
+        pointBorderColor: "rgb(255, 255, 255)",
+        pointBackgroundColor: "#fff",
+        pointBorderWidth: 2,
+        pointHoverRadius: 5,
+        pointHoverBackgroundColor: "rgb(255, 255, 255)",
+        pointHoverBorderColor: "rgb(255, 255, 255)",
+        pointHoverBorderWidth: 2,
+        pointRadius: 1,
+        pointHitRadius: 10,
+        borderColor: "rgb(104, 204, 147)",
+        data: [249, 149, 167, 321, 133, 198, 156, 201, 176, 109, 147, 188]
+      }, {
+        label: "Win Percentage",
+        fill: false,
+        lineTension: 0.3,
+        pointBorderColor: "rgb(255, 255, 255)",
+        pointBackgroundColor: "#fff",
+        pointBorderWidth: 2,
+        pointHoverRadius: 5,
+        pointHoverBackgroundColor: "rgb(255, 255, 255)",
+        pointHoverBorderColor: "rgb(255, 255, 255)",
+        pointHoverBorderWidth: 2,
+        pointRadius: 1,
+        pointHitRadius: 10,
+        borderColor: "rgb(23, 214, 198)",
+        data: [43, 55, 53, 51, 49, 50, 51, 53, 51, 48, 47, 56, 51]
+      }, {
+        label: "Accuracy",
+        fill: false,
+        lineTension: 0.3,
+        pointBorderColor: "rgb(255, 255, 255)",
+        pointBackgroundColor: "#fff",
+        pointBorderWidth: 2,
+        pointHoverRadius: 5,
+        pointHoverBackgroundColor: "rgb(255, 255, 255)",
+        pointHoverBorderColor: "rgb(255, 255, 255)",
+        pointHoverBorderWidth: 2,
+        pointRadius: 1,
+        pointHitRadius: 10,
+        borderColor: "rgb(1, 127, 181)",
+        data: [100, 55, 67, 75, 93, 84, 93, 87, 71, 85, 99, 76]
+      }
+    ]
   }
 })
