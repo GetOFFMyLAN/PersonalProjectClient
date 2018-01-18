@@ -12,15 +12,22 @@
     <!-- styling -->
     <link rel="stylesheet" type="text/css" href="./css/style.css"/>
 
+    <style>
+    body {
+      overflow: hidden;
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+    </style>
+
   </head>
   <body>
-    <!--<div class="draggable">
+    <!--<div class="draggable"> TODO: add draggable section for final version
       <div class="toolbar">
       </div>
     </div> -->
-    <!-- add navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
-      <img src="./img/logo2.png" class="nav-logo"></img>
+      <img src="./img/logo3.png" class="nav-logo"></img>
       <a class="navbar-brand" href="#"><i>Lightning</i></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -54,11 +61,29 @@
               <input type="search" id="tutSearchBox" class="tutSearchBox" placeholder="Search For Tutorials">
               <button class="searchButton" id="searchButton">Search</button>
             </form>
+            <ul class="list-group-item" id="result"></ul>
           </div>
         </div>
       </div>
     </div>
 
+    <script>
+    $(document).ready(function(){
+      $('#tutSearchBox').keyup(function(){
+        $('#result').html('');
+        var searchField = $('#tutSearchBox').val();
+        var expression = new RegExp(searchField, "i");
+        $.getJSON('searchInfo.json', function(data){
+          $.each(data, function(key, value){
+            if(value.name.search(expression) != -1 || value.location.search(expression) != -1
+            {
+              $('result').append('<li class="list-group-item><img src="" '+value.image' height="216" width="384" class="img-thumbnail"/> '+value.name' | <span class="text-muted">'+value.vidInfo'</span> </li>"');
+            }
+          });
+        })
+      });
+    });
+    </script>
 
     <!-- used to properly load jquery -->
     <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
