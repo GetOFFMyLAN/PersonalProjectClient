@@ -17,7 +17,7 @@
 html, body {
   margin: 0;
   height: 100%;
-  overflow: hidden;
+  overflow: auto;
 }
 
 body {
@@ -132,7 +132,7 @@ body {
 .messaging-back {
   background-color: #111111;
   width: 100px;
-  height: 515px;
+  height: 600px; /* TODO: change to inherit for final release */
   overflow-y: auto;
   direction: ltr;
   overflow: hidden;
@@ -273,7 +273,7 @@ body {
   float: left;
   text-align: center;
   border-top: 2px solid #4b4c4c;
-  margin-left: 100px;
+  margin-left: 75px;
 }
 
 .stats-ot > H3 {
@@ -285,12 +285,13 @@ body {
 /* Tutorial page styling */
 .tutorial-main {
   float: left;
+  overflow: hidden;
 }
 
 .outer { /* Used to vertically align search div */
     display: table;
     position: absolute;
-    width: 100%;
+    width: auto;
     margin-top: 30px;
     animation-name: fadeup;
     animation-duration: 1s;
@@ -303,7 +304,7 @@ body {
 }
 
 .inner { /* Used to vertically align search div */
-    margin-left: auto;
+    margin-left: 190px;
     margin-right: auto;
     width: 600px; /*whatever width you want*/
 }
