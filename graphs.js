@@ -44,7 +44,7 @@ var statChart = new Chart(statChartId, {
         pointHoverBorderWidth: 2,
         pointRadius: 1,
         pointHitRadius: 10,
-        borderColor: "rgb(132, 9, 112)",
+        borderColor: "rgb(219, 215, 6)",
         data: [3.4, 1.2, 2.5, 1.7, 2.2, 0.8, 1.1, 0.7, 3.1, 2.7, 1, 1.9]
       }, {
         label: "ADR",
@@ -59,7 +59,7 @@ var statChart = new Chart(statChartId, {
         pointHoverBorderWidth: 2,
         pointRadius: 1,
         pointHitRadius: 10,
-        borderColor: "rgb(104, 204, 147)",
+        borderColor: "rgb(66, 66, 66)",
         data: [249, 149, 167, 321, 133, 198, 156, 201, 176, 109, 147, 188]
       }, {
         label: "Win Percentage",
@@ -74,13 +74,13 @@ var statChart = new Chart(statChartId, {
         pointHoverBorderWidth: 2,
         pointRadius: 1,
         pointHitRadius: 10,
-        borderColor: "rgb(23, 214, 198)",
+        borderColor: "rgb(29, 154, 186)",
         data: [43, 55, 53, 51, 49, 50, 51, 53, 51, 48, 47, 56, 51]
       }, {
         label: "Accuracy",
         fill: false,
         lineTension: 0.3,
-        pointBorderColor: "rgb(255, 255, 255)",
+        pointBorderColor: "rgb(0, 0, 0)",
         pointBackgroundColor: "#fff",
         pointBorderWidth: 2,
         pointHoverRadius: 5,
@@ -89,7 +89,7 @@ var statChart = new Chart(statChartId, {
         pointHoverBorderWidth: 2,
         pointRadius: 1,
         pointHitRadius: 10,
-        borderColor: "rgb(1, 127, 181)",
+        borderColor: "rgb(255, 255, 255)",
         data: [100, 55, 67, 75, 93, 84, 93, 87, 71, 85, 99, 76]
       }
     ]
