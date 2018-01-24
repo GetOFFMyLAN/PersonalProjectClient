@@ -307,6 +307,7 @@ body {
     margin-left: 190px;
     margin-right: auto;
     width: 600px; /*whatever width you want*/
+    float: left;
 }
 
 .tutSearchBox {
@@ -317,6 +318,7 @@ body {
   font-size: 24px;
   font-family: 'Montserrat', sans-serif;
   border-radius: 50px;
+  display: block;
 }
 
 input {
@@ -334,4 +336,16 @@ input {
   text-align: center;
   color: #fff;
   border-radius: 8px;
+}
+
+.names {
+  color: #fff;
+  text-align: center;
+}
+
+.results {
+  float: left;
+  text-align: left;
+  -webkit-padding-start: 0px;
+  padding-left: 0px;
 }

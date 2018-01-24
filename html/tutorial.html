@@ -58,32 +58,25 @@
         <div class="middle">
           <div class="inner">
             <form>
-              <input type="search" id="tutSearchBox" class="tutSearchBox" placeholder="Search For Tutorials">
-              <button class="searchButton" id="searchButton">Search</button>
+              <input type="text" id="tutSearchBox" onkeyup="myFunction()" class="tutSearchBox" placeholder="Search For Tutorials">
+              <!-- <button class="searchButton" id="searchButton">Search</button> -->
             </form>
-            <ul class="list-group-item" id="result"></ul>
+
+            <ul class=”results” id="results">
+              <li class="list-group-item result-list"><a href="#">Adele</a></li>
+              <li class="list-group-item result-list"><a href="#">Agnes</a></li>
+
+              <li class="list-group-item result-list"><a href="#">Billy</a></li>
+              <li class="list-group-item result-list"><a href="#">Bob</a></li>
+
+              <li class="list-group-item result-list"><a href="#">Calvin</a></li>
+              <li class="list-group-item result-list"><a href="#">Christina</a></li>
+              <li class="list-group-item result-list"><a href="#">Cindy</a></li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-
-    <script>
-    $(document).ready(function(){
-      $('#tutSearchBox').keyup(function(){
-        $('#result').html('');
-        var searchField = $('#tutSearchBox').val();
-        var expression = new RegExp(searchField, "i");
-        $.getJSON('searchInfo.json', function(data){
-          $.each(data, function(key, value){
-            if(value.name.search(expression) != -1 || value.location.search(expression) != -1
-            {
-              $('result').append('<li class="list-group-item><img src="" '+value.image' height="216" width="384" class="img-thumbnail"/> '+value.name' | <span class="text-muted">'+value.vidInfo'</span> </li>"');
-            }
-          });
-        })
-      });
-    });
-    </script>
 
     <!-- used to properly load jquery -->
     <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
@@ -101,6 +94,25 @@
 
     <!-- also used to properly load jquery -->
     <script>if (window.module) module = window.module;</script>
+
+    <script>
+    function myFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("tutSearchBox");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("results");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+
+            }
+        }
+    }
+    </script>
 
     <!-- Script references -->
     <script src="./js/mentor.js"></script>
