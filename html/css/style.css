@@ -66,6 +66,13 @@ body {
 
 }
 
+footer {
+  margin-right: 50px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+}
+
 /* Scrollbar styling */
 
 /* width */
@@ -132,12 +139,22 @@ body {
 .messaging-back {
   background-color: #111111;
   width: 100px;
-  height: 600px; /* TODO: change to inherit for final release */
+  height: 625px; /* TODO: change to inherit for final release */
   overflow-y: auto;
   direction: ltr;
   overflow: hidden;
   float: left;
   /* border-top: 1px solid #262626; */ /* TODO: determine if this border is necessary */
+}
+
+.tutorialMess {
+  background-color: #111111;
+  width: 100px;
+  height: 900px; /* TODO: change to inherit for final release */
+  overflow-y: auto;
+  direction: ltr;
+  overflow: hidden;
+  float: left;
 }
 
 .messaging-back:hover {
@@ -312,20 +329,21 @@ body {
 
 .tutSearchBox {
   border: 3px solid #1d9aba;
-  width: 400px;
+  width: 450px;
   height: 50px;
   padding-left: 15px;
   font-size: 24px;
   font-family: 'Montserrat', sans-serif;
   border-radius: 50px;
   display: block;
+  margin-bottom: 10px;
 }
 
 input {
   outline: none;
 }
 
-.searchButton {
+.searchButton { /* TODO: Remove this later as it is junk code now */
   margin-left: 7px;
   width: 100px;
   height: 40px;
@@ -348,4 +366,11 @@ input {
   text-align: left;
   -webkit-padding-start: 0px;
   padding-left: 0px;
+}
+
+.resultHeader {
+  background-color: #fff;
+  margin-bottom: 0px;
+  text-align: center;
+  height: 50px;
 }

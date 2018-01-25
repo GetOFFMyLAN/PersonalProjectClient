@@ -46,12 +46,11 @@
     </nav>
 
     <!-- messaging div -->
-    <div class="messaging-back">
+    <div class="tutorialMess">
       <div class="new-mess-btn" id="new-mess-btn">
         <a href="#"><span class="div-link-span"></span></a>
         <img src="./img/message-btn.png" class="message-btn-plus"></img>
       </div>
-      <!-- <a href="#" class="mess-btn-text">Find a mentor</a> TODO: fix css styling so that this text aligns with the div button and is on the right of it -->
     </div>
     <div class="tutorial-main">
       <div class="outer">
@@ -62,16 +61,28 @@
               <!-- <button class="searchButton" id="searchButton">Search</button> -->
             </form>
 
-            <ul class=”results” id="results">
-              <li class="list-group-item result-list"><a href="#">Adele</a></li>
-              <li class="list-group-item result-list"><a href="#">Agnes</a></li>
+            <ul class="results" id="results">
+              <h3 class="resultHeader"> Aim </h3>
+              <li class="list-group-item result-list"><a href="https://www.youtube.com/watch?v=SK9_RRhNUJM">LuckySkillFaker - Improving Aim (Intermediate - Advanced)</a></li>
+              <li class="list-group-item result-list"><a href="https://www.youtube.com/watch?v=Y2jEPKKIM2I">3Kliksphilip - Basic Aim and Damage Guide (Beginner)</a></li><br>
 
-              <li class="list-group-item result-list"><a href="#">Billy</a></li>
-              <li class="list-group-item result-list"><a href="#">Bob</a></li>
+              <h3 class="resultHeader"> Smokes/Flashes/Nades </h3>
+              <li class="list-group-item result-list"><a href="https://www.youtube.com/watch?v=B1-34bk772k">NadeKing - Dust 2 Smokes</a></li>
+              <li class="list-group-item result-list"><a href="https://www.youtube.com/watch?v=aCy79AAY48Y">NadeKing - Mirage Smokes</a></li>
+              <li class="list-group-item result-list"><a href="https://www.youtube.com/watch?v=ROwKPZ2qLy4">NadeKing - Cache Smokes</a></li>
+              <li class="list-group-item result-list"><a href="https://www.youtube.com/watch?v=dE__PKs9YVE">NadeKing - Train Smokes</a></li>
+              <li class="list-group-item result-list"><a href="https://www.youtube.com/watch?v=TwmKpiEWF-A">NadeKing - Cobblestone Smokes</a></li>
+              <li class="list-group-item result-list"><a href="https://www.youtube.com/watch?v=4hZP11uTRto">NadeKing - Inferno Smokes</a></li>
+              <li class="list-group-item result-list"><a href="https://www.youtube.com/watch?v=B1-34bk772k">NadeKing - Overpass Smokes</a></li><br>
 
-              <li class="list-group-item result-list"><a href="#">Calvin</a></li>
-              <li class="list-group-item result-list"><a href="#">Christina</a></li>
-              <li class="list-group-item result-list"><a href="#">Cindy</a></li>
+              <h3 class="resultHeader"> Movement </h3>
+              <li class="list-group-item result-list"><a href="https://www.youtube.com/watch?v=AGcgQEzCCrI">WarOwl - Basic Movement Guide (Beginner)</a></li>
+              <li class="list-group-item result-list"><a href="https://www.youtube.com/watch?v=ZjVCdnwVgxo">LuckySkillFaker - Advanced Movement (Advanced)</a></li><br>
+              <footer>
+                <div>
+                  <p> Made with ❤ by <a href="http://steamcommunity.com/id/n2va">Axel Ramone</a> </p>
+                </div>
+              </footer>
             </ul>
           </div>
         </div>
@@ -112,6 +123,15 @@
             }
         }
     }
+    </script>
+    
+    <script>
+    var shell = require('electron').shell;
+    //open links externally by default
+    $(document).on('click', 'a[href^="http"]', function(event) {
+        event.preventDefault();
+        shell.openExternal(this.href);
+    });
     </script>
 
     <!-- Script references -->

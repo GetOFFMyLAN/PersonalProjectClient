@@ -40,7 +40,7 @@
 
     <!-- messaging div -->
     <div class="messaging-back">
-      <div class="new-mess-btn" id="new-mess-btn">
+      <div class="new-mess-btn" id="newMess">
         <img src="./img/message-btn.png" class="message-btn-plus"></img>
         <a href="#"><span class="div-link-span"></span></a>
       </div>
@@ -66,12 +66,37 @@
       <canvas id="igStatsChart" width="700" height="300"></canvas>
     </div>
     </div>
+    <footer>
+      <div>
+        <p> Made with ❤ by <a href="http://steamcommunity.com/id/n2va">Axel Ramone</a> </p>
+      </div>
+    </footer>
 
-    <!-- Used to properly load jQuery -->
-    <script>window.$ = window.jQuery = require('jquery');</script>
+    <!-- used to properly load jquery -->
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
 
     <!-- Boostrap JS -->
     <script src="./js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("p").click(function(){
+            $(this).hide();
+        });
+    });
+    </script>
+
+    <!-- also used to properly load jquery -->
+    <script>if (window.module) module = window.module;</script>
+
+    <script>
+    var shell = require('electron').shell;
+    //open links externally by default
+    $(document).on('click', 'a[href^="http"]', function(event) {
+        event.preventDefault();
+        shell.openExternal(this.href);
+    });
+    </script>
 
     <!-- Script references -->
     <script src="./js/mentor.js"></script>
