@@ -25,7 +25,7 @@ function createWindow() {
       protocol: 'file',
       slashes: true
   }));
-}, 5000);
+  }, 5000);
 
   // Open devtools
   // win.webContents.openDevTools();
