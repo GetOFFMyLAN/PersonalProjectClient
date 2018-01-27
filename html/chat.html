@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Lightning Client </title> <!-- Title on the window -->
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri|PT+Sans" rel="stylesheet">
+
+    <!-- Boostrap -->
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+
+    <!-- styling -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+
+    <!-- Used to create popup window -->
+    <script type="text/javascript">
+    <!--
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+    //-->
+    </script>
+
+  </head>
+  <body>
+    <!--<div class="draggable">
+      <div class="toolbar">
+      </div>
+    </div> -->
+    <!-- add navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <img src="./img/clientNavLogo.png" class="nav-logo"></img>
+      <a class="navbar-brand" href="#"><i>Lightning</i></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tutorial.html">Tutorials</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- messaging div -->
+    <div class="messaging-back-chat">
+      <div class="new-mess-btn" id="newMess">
+        <img src="./img/message-btn.png" class="message-btn-plus"></img>
+        <a href="javascript:void(0)" onclick="toggle_visibility('popup-box');"><span class="div-link-span"></span></a>
+      </div>
+      <!-- <a href="#" class="mess-btn-text">Find a mentor</a> TODO: fix css styling so that this text aligns with the div button and is on the right of it -->
+    </div>
+
+    <!-- Popup box start -->
+    <div id="popup-box" class="popup-position">
+      <div id="popup-wrapper">
+        <div id="popup-container">
+          <a href="javascript: void(0)" onclick="toggle_visibility('popup-box');" class="popup-close">X</a>
+          <h3>Chat With A Mentor</h3>
+          <a href="#">Join a Chat</a>
+        </div>
+      </div>
+    </div>
+    <!-- Popup box end -->
+
+    <div class="chat-main">
+      <div class="chatContainer">
+        <form>
+          <input type="text" placeholder="Say something nice" onkeyup="updateText" class="chatBox" id="chatBox">
+        </form>
+      </div>
+    </div>
+
+    <!-- used to properly load jquery -->
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+    <!-- Boostrap JS -->
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- also used to properly load jquery -->
+    <script>if (window.module) module = window.module;</script>
+
+    <!-- Used to open links in a new chrome window -->
+    <script>
+    var shell = require('electron').shell;
+    //open links externally by default
+    $(document).on('click', 'a[href^="http"]', function(event) {
+        event.preventDefault();
+        shell.openExternal(this.href);
+    });
+    </script>
+
+    <!-- Script references -->
+    <script src="./js/mentor.js"></script>
+    <script src="../graphs.js"></script>
+    <script>
+      var textData = 'Yo';
+    </script>
+  </body>
+</html>
