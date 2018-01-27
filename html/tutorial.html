@@ -20,6 +20,19 @@
     }
     </style>
 
+    <!-- Used to create popup window -->
+    <script type="text/javascript">
+    <!--
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+    //-->
+    </script>
+
   </head>
   <body>
     <!--<div class="draggable"> TODO: add draggable section for final version
@@ -48,10 +61,23 @@
     <!-- messaging div -->
     <div class="tutorialMess">
       <div class="new-mess-btn" id="new-mess-btn">
-        <a href="#"><span class="div-link-span"></span></a>
+        <a href="javascript:void(0)"><span class="div-link-span"></span></a>
         <img src="./img/message-btn.png" class="message-btn-plus"></img>
       </div>
     </div>
+
+    <!-- Popup box start -->
+    <div id="popup-box" class="popup-position">
+      <div id="popup-wrapper">
+        <div id="popup-container">
+          <a href="javascript: void(0)" onclick="toggle_visibility('popup-box');" class="popup-close">X</a>
+          <h3>Chat With A Mentor</h3>
+          <a href="./chat.html">Join a Chat</a>
+        </div>
+      </div>
+    </div>
+    <!-- Popup box end -->
+
     <div class="tutorial-main">
       <div class="outer">
         <div class="middle">
