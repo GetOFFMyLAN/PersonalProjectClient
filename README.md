@@ -1,4 +1,4 @@
-# PersonalProjectClient
+# CS Lightning Client
 
 Welcome to my Personal Project Client for CS:GO. This Client is used by players to learn and develop there skills within the game. Please keep in mind that this application is still under development as there may be issues and bugs within the Client.
 
